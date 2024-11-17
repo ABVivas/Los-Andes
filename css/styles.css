@@ -5,17 +5,19 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #000000;
     line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #efe4d5;
 }
 
 /* Encabezado */
 /* Estilos para el fondo de la sección principal */
 .hero {
-    background-image: url('imagees/fondocampo.jpg');
+    background: url(/ganaderia.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
     background-attachment: fixed;
@@ -25,7 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     padding: 20px;
 }
 
@@ -47,7 +49,7 @@ p {
 
 .action-buttons .btn {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: #119c15;
     color: white;
     padding: 10px 20px;
     margin: 10px;
@@ -60,14 +62,18 @@ p {
 }
 
 
+
 .hero .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero h1 {
@@ -92,7 +98,7 @@ p {
 }
 
 .hero-buttons .btn:hover {
-    background: #4a8b47;
+    background: #f2770b;
 }
 
 /* Sección General */
@@ -104,7 +110,7 @@ p {
 .section h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #5a9c53;
+    color: #f2770b;
 }
 
 .section p {
@@ -112,11 +118,11 @@ p {
     margin: 0 auto;
     margin-bottom: 2rem;
     font-size: 1.1rem;
-    color: #555;
+    color: #000000;
 }
 
 .content article, .service {
-    background: #fff;
+    background: #00000064;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
@@ -124,7 +130,7 @@ p {
 }
 
 .content h3, .service h3 {
-    color: #5a9c53;
+    color: #117409;
     margin-bottom: 1rem;
 }
 
@@ -138,13 +144,13 @@ p {
 }
 
 .service p {
-    color: #666;
+    color: #000000;
 }
 
 /* Testimonios */
 blockquote {
     font-style: italic;
-    color: #555;
+    color: #000000;
     margin: 2rem auto;
     max-width: 700px;
     background: #f1f1f1;
@@ -166,14 +172,14 @@ form label {
     font-weight: bold;
     display: block;
     margin-top: 1rem;
-    color: #5a9c53;
+    color: #28951c;
 }
 
 form input[type="text"], form input[type="email"], form textarea {
     width: 100%;
     padding: 0.8rem;
     margin-top: 0.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid #6c6b6b;
     border-radius: 5px;
 }
 
@@ -194,7 +200,7 @@ form button:hover {
 
 /* Pie de página */
 footer {
-    background: #333;
+    background: #272727;
     color: #fff;
     text-align: center;
     padding: 1rem;
