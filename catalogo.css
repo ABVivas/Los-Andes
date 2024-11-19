@@ -1,0 +1,44 @@
+body {
+    background-color: #333;
+    margin: 1em;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 0.5em;
+    display: block;
+    outline: 2px solid #fff;
+    outline-offset: -10px;
+}
+
+.Galeria {
+    columns: 5 320px;
+    column-gap: 0.5em;
+}
+
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.imagen-con-texto {
+    position: relative; /* Hace que los elementos hijos puedan posicionarse en relación a este */
+  }
+  
+  .imagen-con-texto img {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+  }
+  
+  .imagen-con-texto p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto */
+    padding: 10px;
+  }

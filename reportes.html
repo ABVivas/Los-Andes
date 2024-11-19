@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Reportes</title>
+  <link rel="stylesheet" href="stylesReportes.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Gestión de Reportes</h1>
+
+    <!-- Formulario para generar nuevo reporte -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Generar Nuevo Reporte</h3>
+        <form id="formGenerarReporte">
+          <div class="mb-3">
+            <label for="idUsuario" class="form-label">ID Usuario</label>
+            <input type="text" id="idUsuario" class="form-control" placeholder="Ejemplo: U001">
+          </div>
+          <div class="mb-3">
+            <label for="tipoReporte" class="form-label">Tipo de Reporte</label>
+            <select id="tipoReporte" class="form-control">
+              <option value="Animales">Animales</option>
+              <option value="Alimentación">Alimentación</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="fechaInicio" class="form-label">Fecha Inicio</label>
+            <input type="date" id="fechaInicio" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="fechaFin" class="form-label">Fecha Fin</label>
+            <input type="date" id="fechaFin" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="contenidoReporte" class="form-label">Contenido</label>
+            <textarea id="contenidoReporte" class="form-control" rows="5" placeholder="Descripción del reporte..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Generar Reporte</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Tabla de reportes -->
+    <div class="card mb-4">
+      <div class="card-body">
+        <h3 class="card-title">Lista de Reportes Generados</h3>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>ID Reporte</th>
+              <th>ID Usuario</th>
+              <th>Tipo de Reporte</th>
+              <th>Fecha Inicio</th>
+              <th>Fecha Fin</th>
+              <th>Contenido</th>
+              <th>Fecha Generación</th>
+            </tr>
+          </thead>
+          <tbody id="tablaReportes">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Botones de exportación -->
+    <div class="text-center">
+      <button class="btn btn-success" id="exportarPDF">Exportar a PDF</button>
+      <button class="btn btn-info" id="exportarExcel">Exportar a Excel</button>
+    </div>
+  </div>
+
+  <script src="js/scriptReportes.js"></script>
+</body>
+</html>
